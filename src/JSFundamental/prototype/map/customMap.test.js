@@ -21,6 +21,12 @@ describe("Prototype - Custom Map", () => {
   it("Return expected lenegth for array", () => {
     expect(array1.customMap(array1Callback)).toHaveLength(4);
   });
+
+  it("Check against original reduce", () => {
+    expect(array1.customMap(array1Callback)).toEqual(
+      array1.map(array1Callback),
+    );
+  });
 });
 
 describe("Prototype - Custom Map2", () => {
@@ -32,5 +38,11 @@ describe("Prototype - Custom Map2", () => {
 
   it("Return expected lenegth for array", () => {
     expect(array2.customMap2(array2Callback)).toHaveLength(3);
+  });
+
+  it("Check against original reduce", () => {
+    expect(array2.customMap(array1Callback)).toEqual(
+      array2.map(array1Callback),
+    );
   });
 });

@@ -1,18 +1,10 @@
 /* eslint-disable no-extend-native */
-/* 
-    Logic 1
-    1. Create new array 
-    2. Loop through current array and call callback on each element
-    3. Push result of callback to new array
-    4. Return new array
-*/
-
 type CallbackFn<T> = (eachElement: T) => T;
 
 declare global {
   interface Array<T> {
-    customMap: (callbackFn: CallbackFn<T>) => T[];
-    customMap2: (callbackFn: CallbackFn<T>) => T[];
+    customMap: (cb: CallbackFn<T>) => T[];
+    customMap2: (cb: CallbackFn<T>) => T[];
   }
 }
 
@@ -23,16 +15,6 @@ Array.prototype.customMap = function (callbackFn) {
   }
   return mapArray;
 };
-
-/*
-    Logic 2
-    1. Loop through current array 
-    2. Call callback on each element
-    3. Modified each element
-    4. Return modified current array
-    
-    Should use less memory because we are not creating a new array to hold the result
-*/
 
 Array.prototype.customMap2 = function (callbackFn) {
   for (let i = 0; i < this.length; i++) {
