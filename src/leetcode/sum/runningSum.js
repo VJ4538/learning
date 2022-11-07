@@ -9,6 +9,4 @@ const runningSum = (input) => {
   return input;
 };
 
-runningSum([1, 2, 3, 4]);
-
 export default runningSum;
