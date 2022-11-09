@@ -6,10 +6,10 @@ First in last out and last in first out.
 
 ## Time complexity
 
-| OPERATION | BEST TIME COMPLEXITY | WORST TIME COMPLEXITY | AVERAGE TIME COMPLEXITY | SPACE COMPLEXITY |
+| OPERATION | BEST TIME COMPLEXITY | WORST TIME COMPLEXITY | AVERAGE TIME COMPLEXITY | 
 | --------- | -------------------- | --------------------- | ----------------------- | ---------------- |
-| Push      | O(1)                 | O(N)                  | O(1)                    | O(1)             |
-| Pop       | O(1)                 | O(1)                  | O(1)                    | O(1)             |
+| Push      | O(1)                 | O(N)                  | O(1)                              |
+| Pop       | O(1)                 | O(1)                  | O(1)                           |
 | Peek      | O(1)                 | O(1)                  | O(1)                    | O(1)             |
 
 ## Functions

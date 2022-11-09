@@ -24,7 +24,9 @@ describe("Test Stack JS", () => {
 
   it("test peek", () => {
     numberStack.push(5);
-    expect(numberStack.peek()).toEqual(5);
+    numberStack.push(5);
+    numberStack.push(3);
+    expect(numberStack.peek()).toEqual(3);
     expect(numberStack.isEmpty()).toEqual(false);
   });
 
