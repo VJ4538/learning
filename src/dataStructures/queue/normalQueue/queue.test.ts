@@ -3,7 +3,7 @@ import { QueueTs } from "./queueTs";
 const stringQueue = new QueueTs<string>();
 const numberQueue = new QueueTs<number>();
 
-describe("Test Stack JS", () => {
+describe("Test Queue ts", () => {
   beforeEach(() => {
     stringQueue.reset();
     numberQueue.reset();
