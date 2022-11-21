@@ -1,0 +1,31 @@
+@import "../../theme/flexBox";
+@import "../../theme//colors";
+
+.demo-section-container {
+  @include flex-box-center-v;
+}
+
+.demo-section {
+  @include flex-box-center-h;
+}
+
+.demo-description {
+  text-align: center;
+}
+
+.code-block {
+  margin: 16px auto;
+  padding: 16px;
+  background-color: $code-block-background;
+  color: $code-block-text;
+  direction: ltr;
+  border-radius: 10px;
+  border: 1px solid $code-block-border;
+  overflow: auto;
+  font-size: 0.8125rem;
+}
+
+.code-tag {
+  display: flex;
+  flex-direction: column;
+}
